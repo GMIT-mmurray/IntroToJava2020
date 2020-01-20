@@ -1,5 +1,7 @@
 public class Dog {
 
+    public static String Sex;
+
     private String breed;
     private int age;
     private String color;
@@ -16,15 +18,44 @@ public class Dog {
      this.color = color;
      }
 
-    void barking() {
+    public  void barking() {
         System.out.println(breed + " Barking");
     }
 
-    void hungry() {
+    public void hungry() {
         System.out.println(breed + " Hungry");
     }
 
-    void sleeping() {
+    public void sleeping() {
         System.out.println(breed +" sleeping");
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return ("From toString ---- Breed :"+ breed + " Age  : " + age + "Color : " + color   + "Sex" + Sex);
     }
 }
