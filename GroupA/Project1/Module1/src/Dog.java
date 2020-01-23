@@ -1,8 +1,11 @@
 public class Dog {
-    String name;
-    String breed;
-    int age;
-    String color;
+
+    public static String Sex = "Male";
+
+    private String name;
+    private String breed;
+    private int age;
+    private String color;
 
     public Dog() {
       System.out.println(" Dog Default Constructor");
@@ -20,12 +23,48 @@ public class Dog {
         this.age = age;
         this.color = color;
     }
-    void barking() {
+
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    void barking() {
+        System.out.println( name +" is Barking");
+   }
+
     void hungry() {
+        System.out.println( name +" is Hungry");
     }
 
     void sleeping() {
+        System.out.println( name +" is Sleeping");
     }
 }
