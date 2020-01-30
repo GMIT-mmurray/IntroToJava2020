@@ -29,6 +29,8 @@ public class Main {
         dog1.sleeping();
         dog2.sleeping();
 
+        System.out.println(dog1);
+
     }
 
 }

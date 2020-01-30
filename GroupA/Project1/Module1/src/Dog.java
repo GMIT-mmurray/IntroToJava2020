@@ -67,4 +67,14 @@ public class Dog {
     void sleeping() {
         System.out.println( name +" is Sleeping");
     }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", breed='" + breed + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }

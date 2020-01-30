@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b046ac-6aaf-4e92-8709-fd13ab7bdc5d" name="Default Changelist" comment="Test Sat 18.1.2020">
-      <change afterPath="$PROJECT_DIR$/Module2/Module2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module2/src/EmployeeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module3/Module3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module3/src/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module4/Module4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module4/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module5/Module5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module5/src/Test.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Project2/Module1/Module1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project2/Module1/src/StringDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Module1/src/Dog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="731">
               <caret line="61" selection-start-line="57" selection-start-column="3" selection-end-line="61" />
             </state>
           </provider>
@@ -64,14 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding>
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Module4/src/Test.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+              <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -169,30 +151,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="Module4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="Module4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +283,8 @@
       <workItem from="1579365097976" duration="1343000" />
       <workItem from="1579512130993" duration="7840000" />
       <workItem from="1579776209599" duration="25000" />
-      <workItem from="1580115900598" duration="6441000" />
+      <workItem from="1580115900598" duration="7042000" />
+      <workItem from="1580375411457" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Test Sat 18.1.2020">
       <created>1579365453929</created>
@@ -345,17 +307,24 @@
       <option name="project" value="LOCAL" />
       <updated>1579521209850</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Mon 27.1.2020">
+      <created>1580125646408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580125646408</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15649000" />
+    <option name="totallyTimeSpent" value="16262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19255663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19579288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -393,7 +362,8 @@
     <MESSAGE value="Test Sat 18.1.2020" />
     <MESSAGE value="Mon 20.1.2020 #1" />
     <MESSAGE value="Mon Final Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mon Final Version" />
+    <MESSAGE value="Mon 27.1.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mon 27.1.2020" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,34 +402,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/src/Puppy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="9" selection-start-line="11" selection-start-column="2" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Module1/src/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="61" selection-start-line="57" selection-start-column="3" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -468,6 +410,20 @@
             <element signature="e#64#65#0" expanded="true" />
             <element signature="e#116#117#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/src/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="61" selection-start-line="57" selection-start-column="3" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -507,10 +463,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/src/Puppy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="11" selection-start-column="2" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Module1/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Module4/src/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
         </state>
       </provider>
     </entry>
