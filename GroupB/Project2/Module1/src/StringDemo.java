@@ -19,8 +19,5 @@ public class StringDemo {
         } else {
             System.out.println("Its NOT palidrome");
         }
-
-
-
     }
 }
