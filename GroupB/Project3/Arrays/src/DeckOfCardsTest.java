@@ -1,28 +1,33 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
+// Fig. 7.11: DeckOfCardsTest.java
+// Card shuffling and dealing.
 
-public class StudentPoll 
+public class DeckOfCardsTest
 {
+   // execute application
    public static void main(String[] args)
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
+      DeckOfCards myDeckOfCards = new DeckOfCards();
 
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
+      for (int i = 1; i <= 52; i++){
+         // deal and display a Card
+         System.out.printf("%-19s", myDeckOfCards.dealCard().toString());
+         if (i % 6 == 0) // output a newline after every fourth card
+            System.out.println();
       }
+      System.out.println();
+      System.out.println();
 
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
-   
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      myDeckOfCards.shuffle(); // place Cards in random order
+      
+      // print all 52 Cards in the order in which they are dealt
+      for (int i = 1; i <= 52; i++) {
+         // deal and display a Card
+         System.out.printf("%-19s", myDeckOfCards.dealCard().toString());
+		 if (i % 6 == 0) // output a newline after every fourth card
+		    System.out.println();
+      } 
    } 
-} // end class StudentPoll
+} // end class DeckOfCardsTest
 
 
 /**************************************************************************

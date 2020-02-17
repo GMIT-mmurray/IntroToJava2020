@@ -1,28 +1,25 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
+// Fig. 7.9: Card.java
+// Card class represents a playing card.
 
-public class StudentPoll 
+public class Card 
 {
-   public static void main(String[] args)
+   private final String face; // face of card ("Ace", "Deuce", ...)
+   private final String suit; // suit of card ("Hearts", "Diamonds", ...)
+
+   // two-argument constructor initializes card's face and suit
+   public Card(String face, String suit)
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
-
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
-      }
-
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
-   
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      this.face = face;
+      this.suit = suit; 
    } 
-} // end class StudentPoll
+
+   // return String representation of Card
+   @Override
+   public String toString()
+   { 
+      return face + " of " + suit;
+   } 
+} // end class Card
 
 
 /**************************************************************************

@@ -1,28 +1,21 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
-
-public class StudentPoll 
-{
+// Fig. 7.15: GradeBookTest.java
+// GradeBookTest creates a GradeBook object using an array of grades, 
+// then invokes method processGrades to analyze them.
+public class GradeBookTest
+{ 
+   // main method begins program execution
    public static void main(String[] args)
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
-
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
-      }
-
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
-   
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      // one-dimensional array of student grades
+      int[] gradesArray = {87, 68, 94, 100, 83, 78, 85, 91, 76, 87,45,100,0,24};
+      
+      GradeBook myGradeBook = new GradeBook(
+         "CS101 Introduction to Java Programming", gradesArray);
+      System.out.printf("Welcome to the grade book for%n%s%n%n", 
+         myGradeBook.getCourseName());
+      myGradeBook.processGrades();
    } 
-} // end class StudentPoll
+} // end class GradeBookTest
 
 
 /**************************************************************************

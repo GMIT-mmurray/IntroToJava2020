@@ -1,29 +1,20 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
+// Fig. 7.12: EnhancedForTest.java
+// Using enhanced for statement to total integers in an array.
 
-public class StudentPoll 
+public class EnhancedForTest 
 {
-   public static void main(String[] args)
+   public static void main(String[] args) 
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
+      int[] array = {87, 68, 94, 100, 83, 78, 85, 91, 76, 87};
+      int total = 0;
 
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
-      }
+      // add each element's value to total
+      for (int number : array)
+         total += number;
 
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
-   
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      System.out.printf("Total of array elements: %d%n", total);
    } 
-} // end class StudentPoll
-
+} // end class EnhancedForTest
 
 /**************************************************************************
  * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
@@ -39,3 +30,4 @@ public class StudentPoll
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
+

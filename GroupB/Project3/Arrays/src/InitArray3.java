@@ -1,28 +1,35 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
+// Fig. 7.17: InitArray.java
+// Initializing two-dimensional arrays.
 
-public class StudentPoll 
+public class InitArray3
 {
+   // create and output two-dimensional arrays
    public static void main(String[] args)
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
+      int[][] array1 = {{1, 2, 3}, {4, 5, 6}};        
+      int[][] array2 = {{1, 2}, {3}, {4, 5, 6}}; 
 
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
-      }
-
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
+      System.out.println("Values in array1 by row are");
+      outputArray(array1); // displays array1 by row
    
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      System.out.printf("%nValues in array2 by row are%n");
+      outputArray(array2); // displays array2 by row
    } 
-} // end class StudentPoll
+
+   // output rows and columns of a two-dimensional array
+   public static void outputArray(int[][] array)
+   {
+      // loop through array's rows
+      for (int row = 0; row < array.length; row++) 
+      {
+         // loop through columns of current row
+         for (int column = 0; column < array[row].length; column++)
+            System.out.printf("%d  ", array[row][column]);
+
+         System.out.println();
+      } 
+   } 
+} // end class InitArray
 
 
 /**************************************************************************

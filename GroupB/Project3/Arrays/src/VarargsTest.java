@@ -1,28 +1,41 @@
-// Fig. 7.8: StudentPoll.java
-// Poll analysis program.
+// Fig. 7.20: VarargsTest.java
+// Using variable-length argument lists.
 
-public class StudentPoll 
+public class VarargsTest 
 {
-   public static void main(String[] args)
+   // calculate average
+   public  double average(double... numbers)
    {
-      // student response array (more typically, input at run time)
-      int[] responses = {1, 2, 5, 4, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3,
-         2, 3, 3, 2, 1,4,0,0,0,0};
-      int[] frequency = new int[6]; // array of frequency counters
+      double total = 0.0;
+      System.out.println(numbers.length);
+      System.out.println(numbers[0]);
 
-      // for each answer, select responses element and use that value 
-      // as frequency index to determine element to increment
-      for (int answer = 0; answer < responses.length; answer++){
-       frequency[responses[answer]]++;
-      }
+      // calculate total using the enhanced for statement
+      for (double d : numbers)
+         total += d;
 
-      System.out.printf("%s%10s%n", "Rating", "Frequency");
-   
-      // output each array element's value
-      for (int rating = 0; rating < frequency.length; rating++)
-         System.out.printf("%6d%10d%n", rating, frequency[rating]);
+      return total / numbers.length;
    } 
-} // end class StudentPoll
+
+   public static void main(String[] args) 
+   {
+      VarargsTest vaTest = new VarargsTest();
+      double d1 = 10.0;
+      double d2 = 20.0;
+      double d3 = 30.0;
+      double d4 = 40.0;
+
+      System.out.printf("d1 = %.1f%nd2 = %.1f%nd3 = %.1f%nd4 = %.1f%n%n",
+         d1, d2, d3, d4);
+
+      System.out.printf("Average of d1 and d2 is %.1f%n", 
+         vaTest.average(d1, d2));
+      System.out.printf("Average of d1, d2 and d3 is %.1f%n", 
+         vaTest.average(d1, d2, d3));
+      System.out.printf("Average of d1, d2, d3 and d4 is %.1f%n", 
+         vaTest.average(d1, d2, d3, d4,45.7));
+   } 
+} // end class VarargsTest
 
 
 /**************************************************************************
