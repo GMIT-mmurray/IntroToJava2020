@@ -31,6 +31,7 @@ public class BasePlusCommissionEmployeeTest
       System.out.printf("%n%s:%n%n%s%n", 
          "Updated employee information obtained by toString", 
          employee.toString());
+      System.out.printf(" Earnings %.2f",employee.earnings());
 
       // -------------------------------------------------------
 
@@ -55,7 +56,13 @@ public class BasePlusCommissionEmployeeTest
         System.out.printf("%n%s:%n%n%s%n",
               "Updated employee information obtained by toString",
               employee1.toString());
+      System.out.printf(" Earnings %.2f%n",employee1.earnings());
 
+     DirectorPlusBasePlusCommissionEmployee dbce =
+             new DirectorPlusBasePlusCommissionEmployee("Jim","long",
+             "111111111",100,00.1,100000,50000);
+
+      System.out.printf(" Earnings from dbce %.2f%n",dbce.earnings());
 
    } // end main
 
