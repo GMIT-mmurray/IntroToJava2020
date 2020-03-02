@@ -19,8 +19,9 @@ public class MyCalculation extends Calculation {
         //System.out.println("The sum of the given numbers:"+getZ());
         super.addition(x,y);
         super.z = x+y;
+
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int a = 20, b = 10;
         MyCalculation demo = new MyCalculation();
         demo.addition(a, b);

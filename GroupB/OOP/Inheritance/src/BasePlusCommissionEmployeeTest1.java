@@ -6,8 +6,8 @@ public class BasePlusCommissionEmployeeTest1
    public static void main(String[] args) 
    {
       // instantiate BasePlusCommissionEmployee object
-      BasePlusCommissionEmployee employee = 
-         new BasePlusCommissionEmployee(
+      BasePlusCommissionEmployee1 employee =
+         new BasePlusCommissionEmployee1(
          "Bob", "Lewis", "333-33-3333", 5000, .04, 300);
       
       // get base-salaried commission employee data
@@ -36,21 +36,14 @@ public class BasePlusCommissionEmployeeTest1
                                          "123456",12333.5,0.3,
                                           1234.4,4000.0);
       System.out.println(bpcd);
+
+      System.out.println(bpcd instanceof BasePlusCommissionEmployee1);
+      System.out.println(bpcd instanceof BasePlusCommissionPlusDirector);
+      System.out.println(bpcd instanceof CommissionEmployee1);
+      System.out.println(bpcd instanceof Object);
+      System.out.println(employee instanceof BasePlusCommissionEmployee1);
+      System.out.println(employee instanceof BasePlusCommissionPlusDirector);
    } // end main
 } // end class BasePlusCommissionEmployeeTest
 
 
-/**************************************************************************
- * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
