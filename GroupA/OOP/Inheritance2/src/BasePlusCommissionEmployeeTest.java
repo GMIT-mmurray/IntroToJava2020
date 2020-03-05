@@ -63,7 +63,10 @@ public class BasePlusCommissionEmployeeTest
              "111111111",100,00.1,100000,50000);
 
       System.out.printf(" Earnings from dbce %.2f%n",dbce.earnings());
-
+      System.out.println(dbce instanceof CommissionEmployee);
+      System.out.println(employee1 instanceof CommissionEmployee);
+      System.out.println(employee instanceof CommissionEmployee);
+      System.out.println(employee instanceof DirectorPlusBasePlusCommissionEmployee);
    } // end main
 
 
